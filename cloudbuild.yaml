@@ -44,7 +44,7 @@ steps:
       - '-c'
       - |
         source /workspace/commit.env
-        sed "s|IMAGE_PLACEHOLDER|asia-south1-docker.pkg.dev/affable-hydra-467019-a9/zendesk/zendesk-image:${COMMIT_SHA}|" kubernetes/full-deployment.yaml > kubernetes/deploy-final.yaml
+        sed "s|IMAGE_PLACEHOLDER|asia-south1-docker.pkg.dev/affable-hydra-467019-a9/zendesk/zendesk-image:${COMMIT_SHA}|" kubernetes/app.yaml > kubernetes/deploy-final.yaml
 
   # Deploy to GKE
   - name: 'gcr.io/cloud-builders/kubectl'
