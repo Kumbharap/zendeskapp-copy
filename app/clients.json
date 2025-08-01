@@ -19,6 +19,10 @@
     "emails": ["Jaquar.support@example.com", "jaquar.lead.b@example.com"],
     "domains": ["Jaquar.net", "jaquar.com"]
   },
+  "nviz": {
+    "emails": ["nviz.support@example.com", "nviz.lead.b@example.com"],
+    "domains": ["nviz.net", "nviz.com"]
+  },
   "RR": {
     "emails": ["rr.support@example.com", "rr.lead.b@example.com"],
     "domains": ["rr.net", "rr.com"]
