@@ -3,9 +3,9 @@
     "emails": ["tata.contact1@example.com", "tata.support@example.com", "tata.lead.b@example.com","abhishekkumbhar48@gmail.com"],
     "domains": ["tata.com", "sub.tata.com", "tata.org", "tata.in"]
   },
-  "BMW": {
-    "emails": ["bmw.contact@example.com", "bmw.lead.b@example.com", "bmw.support@example.com"],
-    "domains": ["bmw.org", "bmw.domainBMW.org", "bmw.com", "bmw.net"]
+  "BMW22": {
+    "emails": ["bmw.contac33t@example.com", "bmw.lead.b@example.com", "bmw.support@example.com"],
+    "domains": ["bmw.org", "bmw.domai33nBMW.org", "bmw.com", "bmw.net"]
   },
   "Audi": {
     "emails": ["audi.support@example.com", "audi.lead.b@example.com", "audi.tech@example.com"],
