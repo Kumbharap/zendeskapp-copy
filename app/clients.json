@@ -7,6 +7,10 @@
     "emails": ["bmw.contac33t@example.com", "bmw.lead.b@example.com", "bmw.support@example.com"],
     "domains": ["bmw.org", "bmw.domai33nBMW.org", "bmw.com", "bmw.net"]
   },
+  "bentley": {
+    "emails": ["bentley.contac33t@example.com", "bentley.lead.b@example.com", "bentley.support@example.com"],
+    "domains": ["bentley.org", "bmw.bentley.org", "bentley.com", "bentley.net"]
+  },
   "Audi": {
     "emails": ["audi.support@example.com", "audi.lead.b@example.com", "audi.tech@example.com"],
     "domains": ["audi.net", "audi.domainB.org", "audi.com"]
