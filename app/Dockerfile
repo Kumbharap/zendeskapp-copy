@@ -3,6 +3,11 @@ FROM python:3.9-slim-bullseye
 
 WORKDIR /app
 
+ENV TZ=Asia/Kolkata
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
+    apt-get update && apt-get install -y --no-install-recommends tzdata && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN echo 'APT::Acquire::Retries "5";' > /etc/apt/apt.conf.d/80-retries && \
     echo 'APT::Acquire::http::Timeout "60";' >> /etc/apt/apt.conf.d/80-retries && \
     echo 'APT::Acquire::ftp::Timeout "60";' >> /etc/apt/apt.conf.d/80-retries && \
