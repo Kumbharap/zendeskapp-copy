@@ -8,7 +8,7 @@ from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from flask_login import LoginManager, UserMixin, login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
-import language_tool_python # Added for spell and grammar check
+import language_tool_python # for spell and grammar check
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('FLASK_SECRET_KEY', '0a7a2947005a75d19d69e19b34ff8f29502c8192333e617')
@@ -53,8 +53,13 @@ class User(UserMixin):
         return check_password_hash(self.password_hash, password)
 
 users = {
-    "user": User(1, "Abhshek", "pass"),
-    "abhi": User(2, "abhis", "abhi")
+    "Jayaram.kotta@nviz.com": User(1, "Jayaram", "D8EWQPOD3TsyuAW"),
+    "mahesh.rangisetty@nviz.com": User(2, "Mahesh", "WF7r2DmCfUK6jHg"),
+    "saikrishna.ura@nviz.com": User(3, "Sai", "2ZMOvsoTXUJhKOU"),
+    "abhishek.kumbhar@nviz.com": User(4, "Abhishek", "g73xrFnv7llDrKW"),
+    "majeed.shaikh@nviz.com": User(5, "Majeed", "3DgmEe2MwoXf6DE"),
+    "atul.ghodmare@nviz.com": User(6, "Atul", "mdQeB6UgP4IzbhU"),
+    "shiva.sangwan@nviz.com": User(7, "Shiva", "0EdA1WMHFwVuNRI")
 }
 
 @login_manager.user_loader
@@ -78,7 +83,7 @@ def login():
             return redirect(url_for('index'))
         else:
             flash('Invalid username or password.', 'danger')
-    return render_template('login.html') # You'll need to create this template
+    return render_template('login.html') 
 
 @app.route('/logout')
 @login_required
